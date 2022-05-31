@@ -1,5 +1,6 @@
 $primaryBackgroundColor: #163F5F;
 $yellowTextColor: #F0C007;
+$colorText: #7a7a7a;
 
 @mixin fonth2P {
     text-transform: none;
@@ -7,7 +8,6 @@ $yellowTextColor: #F0C007;
     font-size: 32px;
     line-height: 46px;
     color: #ffffff;
-    width: 600px;
     text-align: center;
     margin: 58px 150px 0 0;
 }
@@ -72,7 +72,7 @@ body{
     }
 }
 .section {
-    .container-fluid {
+    .containerFluid {
         width: 100%;
         background: url(../img/bg-banner.webp) center center no-repeat;
         background-size: cover;
@@ -81,14 +81,15 @@ body{
         display: flex;
         height: 500px;
         justify-content: end;
+        h2 {
+            @include fonth2P;
+        }
+        p {
+            font-size: 20px!important;
+            @include fonth2P;
+        }
     }
-    h2 {
-        @include fonth2P;
-    }
-    p {
-        font-size: 20px!important;
-        @include fonth2P;
-    }
+
     .batton {
         margin-left: 177px;
         padding-right: 115px;
@@ -106,6 +107,11 @@ body{
                 font-weight: 700;
                 background: #d1a804;
             }
+        }
+    }
+    .article {
+        * {
+        color: $colorText;
         }
     }
 }

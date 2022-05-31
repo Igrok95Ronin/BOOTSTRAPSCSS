@@ -68,7 +68,7 @@ body {
           align-items: center;
 }
 
-.section .container-fluid {
+.section .containerFluid {
   width: 100%;
   background: url(../img/bg-banner.webp) center center no-repeat;
   background-size: cover;
@@ -82,24 +82,22 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
 }
-.section h2 {
+.section .sectionCol h2 {
   text-transform: none;
   font-weight: 700;
   font-size: 32px;
   line-height: 46px;
   color: #ffffff;
-  width: 600px;
   text-align: center;
   margin: 58px 150px 0 0;
 }
-.section p {
+.section .sectionCol p {
   font-size: 20px !important;
   text-transform: none;
   font-weight: 700;
   font-size: 32px;
   line-height: 46px;
   color: #ffffff;
-  width: 600px;
   text-align: center;
   margin: 58px 150px 0 0;
 }
@@ -121,6 +119,9 @@ body {
   font-size: 27px;
   font-weight: 700;
   background: #d1a804;
+}
+.section .article * {
+  color: #7a7a7a;
 }
 
 @media (max-width: 992px) {
