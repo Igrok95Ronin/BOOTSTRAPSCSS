@@ -1,0 +1,143 @@
+body {
+  outline: 1px solid red;
+  margin: auto;
+  padding: 0;
+  font: 15px Verdana, Helvetica, Arial, sans-serif;
+  max-width: 1920px;
+  min-width: 360px;
+  color: #7a7a7a;
+}
+
+.header {
+  background-color: #163F5F;
+  color: #fff;
+  font-weight: 700;
+}
+.header h1 {
+  font-size: 16.8px;
+  font-weight: 700;
+  margin: auto;
+}
+.header p {
+  margin: auto;
+}
+.header span {
+  color: #F0C007;
+}
+.header a {
+  color: #F0C007;
+  text-decoration: none;
+}
+.header a:hover {
+  color: #11c900;
+}
+.header .header_logo {
+  max-width: 220px;
+}
+.header img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+.header .container-fluid {
+  max-width: 1200px;
+}
+.header .headerCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+.header .headerCol .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header .headerCol .items .vr {
+  height: 100%;
+  margin: 0 20px;
+}
+.header .headerCol .items .item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section .container-fluid {
+  width: 100%;
+  background: url(../img/bg-banner.webp) center center no-repeat;
+  background-size: cover;
+}
+.section .sectionCol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.section h2 {
+  text-transform: none;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  color: #fff;
+  width: 600px;
+  text-align: center;
+  margin: 58px 150px 0 0;
+}
+.section p {
+  font-size: 20px !important;
+  text-transform: none;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  color: #fff;
+  width: 600px;
+  text-align: center;
+  margin: 58px 150px 0 0;
+}
+.section .batton {
+  margin-left: 177px;
+  padding-right: 115px;
+}
+.section .batton a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+  height: 60px;
+  margin: auto;
+  max-width: 300px;
+  background: #F0C007;
+}
+.section .batton a:hover {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+  background: #d1a804;
+}
+
+@media (max-width: 992px) {
+  .section .sectionCol {
+    display: block;
+    height: 100%;
+  }
+  .section .sectionCol h2 {
+    width: 100%;
+    margin: 10px 0 0 0;
+  }
+  .section .sectionCol p {
+    width: 100%;
+    margin: 30px 0 0 0;
+  }
+  .section .sectionCol .batton {
+    margin-left: 0;
+    padding-right: 0;
+  }
+}

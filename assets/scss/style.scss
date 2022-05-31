@@ -1,0 +1,130 @@
+$primaryBackgroundColor: #163F5F;
+$yellowTextColor: #F0C007;
+
+@mixin fonth2P {
+    text-transform: none;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    color: #fff;
+    width: 600px;
+    text-align: center;
+    margin: 58px 150px 0 0;
+}
+
+body{
+    outline: 1px solid red;
+    margin: auto;
+    padding: 0;
+    font: 15px Verdana,Helvetica,Arial,sans-serif;
+    max-width: 1920px;
+    min-width: 360px;
+    color: #7a7a7a;
+}
+.header {
+    background-color: $primaryBackgroundColor;
+    color: #fff;
+    font-weight: 700;
+
+    h1{
+        font-size: 16.8px;
+        font-weight: 700;
+        margin: auto;
+    }
+    p {
+        margin: auto;
+    }
+    span {
+        color: $yellowTextColor;
+    }
+    a {
+        color: $yellowTextColor;
+        text-decoration: none;
+        &:hover {
+            color: #11c900;
+        }
+    }
+    .header_logo {
+        max-width: 220px;        
+    }
+    img {
+        max-width:50px;
+        margin-right: 10px;
+    }
+    .container-fluid {
+        max-width: 1200px;
+    }
+    .headerCol {
+        display: flex;
+        justify-content:space-between;
+        padding: 10px;
+        .items {
+            display: flex;
+            align-items: center;
+            .vr {
+                height: 100%;
+                margin: 0 20px;
+            }
+            .item {
+                align-items: center;
+            }
+        }
+    }
+}
+.section {
+    .container-fluid {
+        width: 100%;
+        background: url(../img/bg-banner.webp) center center no-repeat;
+        background-size: cover;
+    }
+    .sectionCol {
+        display: flex;
+        height: 500px;
+        justify-content: end;
+    }
+    h2 {
+        @include fonth2P;
+    }
+    p {
+        font-size: 20px!important;
+        @include fonth2P;
+    }
+    .batton {
+        margin-left: 177px;
+        padding-right: 115px;
+        a {
+            color: #fff;
+            font-size: 27px;
+            font-weight: 700;
+            height: 60px;
+            margin: auto;
+            max-width: 300px;
+            background: #F0C007;
+            &:hover {
+                color: #fff;
+                font-size: 27px;
+                font-weight: 700;
+                background: #d1a804;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .section .sectionCol {
+        display: block;
+        height: 100%;
+        h2 {
+            width: 100%;
+            margin: 10px 0 0 0;
+        }
+        p {
+            width: 100%;
+            margin: 30px 0 0 0;
+        }
+        .batton {
+            margin-left: 0;
+            padding-right: 0;
+        }
+    }
+}
