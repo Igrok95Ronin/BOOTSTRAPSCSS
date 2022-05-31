@@ -14,6 +14,7 @@ $colorText: #7a7a7a;
 
 body{
     outline: 1px solid red;
+    background: #e6e9ec;
     margin: auto;
     padding: 0;
     font: 15px Verdana,Helvetica,Arial,sans-serif;
@@ -88,30 +89,114 @@ body{
             font-size: 20px!important;
             @include fonth2P;
         }
-    }
-
-    .batton {
-        margin-left: 177px;
-        padding-right: 115px;
-        a {
-            color: #fff;
-            font-size: 27px;
-            font-weight: 700;
-            height: 60px;
-            margin: auto;
-            max-width: 300px;
-            background: #F0C007;
-            &:hover {
+        .batton {
+            margin-left: 177px;
+            padding-right: 115px;
+            a {
                 color: #fff;
                 font-size: 27px;
                 font-weight: 700;
-                background: #d1a804;
+                height: 60px;
+                margin: auto;
+                max-width: 300px;
+                background: #F0C007;
+                &:hover {
+                    color: #fff;
+                    font-size: 27px;
+                    font-weight: 700;
+                    background: #d1a804;
+                }
             }
         }
     }
+
+    
     .article {
+        max-width: 1200px;
+        margin: auto;
+        .colorCol{
+            background: #fff;
+        }
         * {
-        color: $colorText;
+            color: $colorText;
+        }
+        p {
+            font-size: 14px;
+            line-height: 28px;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        h2 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #555;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .batton {
+            margin-left: 177px;
+            a {
+                color: #fff;
+                font-size: 27px;
+                font-weight: 700;
+                height: 60px;
+                margin: auto;
+                max-width: 300px;
+                background: #F0C007;
+                &:hover {
+                    color: #fff;
+                    font-size: 27px;
+                    font-weight: 700;
+                    background: #d1a804;
+                }
+            }
+        }
+        &:not(.colorCol) {
+            .item {
+                background: #073A5E url(../img/picto-rapide.webp) no-repeat;
+                background-position: right center;
+                font-size: 16px;
+                color: #f4f4f4;
+                margin: 0 0 20px 0;
+                padding: 30px 10px;
+                border-radius: 5px;
+                &:hover {
+                    background: #08446f url(../img/picto-rapide.webp) no-repeat;
+                    background-position: right center;
+                    cursor:pointer;
+                }
+                &:nth-child(2) {
+                    background: #073A5E url(../img/picto-proche.webp) no-repeat;
+                    background-position: right center;
+                    &:hover {
+                        background: #08446f url(../img/picto-proche.webp) no-repeat;
+                        background-position: right center;
+                        cursor:pointer;
+                    }
+                }
+                &:nth-child(3) {
+                    background: #073A5E url(../img/picto-experience.webp) no-repeat;
+                    background-position: right center;
+                    &:hover {
+                        background: #08446f url(../img/picto-experience.webp) no-repeat;
+                        background-position: right center;
+                        cursor:pointer;
+                    }
+                }
+                &:nth-child(4) {
+                    background: #073A5E url(../img/picto-devis.webp) no-repeat;
+                    background-position: right center;
+                    &:hover {
+                        background: #08446f url(../img/picto-devis.webp) no-repeat;
+                        background-position: right center;
+                        cursor:pointer;
+                    }
+                }
+
+                
+            }
+            
+            
         }
     }
 }

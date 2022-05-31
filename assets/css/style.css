@@ -1,5 +1,6 @@
 body {
   outline: 1px solid red;
+  background: #e6e9ec;
   margin: auto;
   padding: 0;
   font: 15px Verdana, Helvetica, Arial, sans-serif;
@@ -101,11 +102,11 @@ body {
   text-align: center;
   margin: 58px 150px 0 0;
 }
-.section .batton {
+.section .sectionCol .batton {
   margin-left: 177px;
   padding-right: 115px;
 }
-.section .batton a {
+.section .sectionCol .batton a {
   color: #fff;
   font-size: 27px;
   font-weight: 700;
@@ -114,14 +115,93 @@ body {
   max-width: 300px;
   background: #F0C007;
 }
-.section .batton a:hover {
+.section .sectionCol .batton a:hover {
   color: #fff;
   font-size: 27px;
   font-weight: 700;
   background: #d1a804;
 }
+.section .article {
+  max-width: 1200px;
+  margin: auto;
+}
+.section .article .colorCol {
+  background: #fff;
+}
 .section .article * {
   color: #7a7a7a;
+}
+.section .article p {
+  font-size: 14px;
+  line-height: 28px;
+  margin-bottom: 8px;
+  color: #555;
+}
+.section .article h2 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.section .article .batton {
+  margin-left: 177px;
+}
+.section .article .batton a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+  height: 60px;
+  margin: auto;
+  max-width: 300px;
+  background: #F0C007;
+}
+.section .article .batton a:hover {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 700;
+  background: #d1a804;
+}
+.section .article:not(.colorCol) .item {
+  background: #073A5E url(../img/picto-rapide.webp) no-repeat;
+  background-position: right center;
+  font-size: 16px;
+  color: #f4f4f4;
+  margin: 0 0 20px 0;
+  padding: 30px 10px;
+  border-radius: 5px;
+}
+.section .article:not(.colorCol) .item:hover {
+  background: #08446f url(../img/picto-rapide.webp) no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+.section .article:not(.colorCol) .item:nth-child(2) {
+  background: #073A5E url(../img/picto-proche.webp) no-repeat;
+  background-position: right center;
+}
+.section .article:not(.colorCol) .item:nth-child(2):hover {
+  background: #08446f url(../img/picto-proche.webp) no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+.section .article:not(.colorCol) .item:nth-child(3) {
+  background: #073A5E url(../img/picto-experience.webp) no-repeat;
+  background-position: right center;
+}
+.section .article:not(.colorCol) .item:nth-child(3):hover {
+  background: #08446f url(../img/picto-experience.webp) no-repeat;
+  background-position: right center;
+  cursor: pointer;
+}
+.section .article:not(.colorCol) .item:nth-child(4) {
+  background: #073A5E url(../img/picto-devis.webp) no-repeat;
+  background-position: right center;
+}
+.section .article:not(.colorCol) .item:nth-child(4):hover {
+  background: #08446f url(../img/picto-devis.webp) no-repeat;
+  background-position: right center;
+  cursor: pointer;
 }
 
 @media (max-width: 992px) {
